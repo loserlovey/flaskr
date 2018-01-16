@@ -1,6 +1,3 @@
 # configuration
-DATABASE = './db/flaskr.db'
-DEBUG = True
+DEBUG = False
 SECRET_KEY = 'development key'
-USERNAME = 'admin'
-PASSWORD = 'default'

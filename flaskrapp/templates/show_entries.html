@@ -13,7 +13,10 @@
   {% endif %}
   <ul class=entries>
   {% for entry in entries %}
-    <li><h2>{{ entry.title }}</h2>{{ entry.text|safe }}
+    <li><h2>{{ entry.title }}</h2>{{ entry.text|safe }}<br/>
+    {% if current_user.is_admin %}
+    <a href="/delete/{{ entry.id }}"><i>Delete</i></a>
+    {% endif %}
   {% else %}
     <li><em>Unbelievable.  No entries here so far</em>
   {% endfor %}

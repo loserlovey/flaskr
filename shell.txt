@@ -1,0 +1,12 @@
+# add user
+curl -i -H "Content-Type: application/json" -X POST -d '{"username":"csy","password":"123","email":"csy@163.com"}' http://localhost:5000/api/users -u admin:default
+curl -i -H "Content-Type: application/json" -X POST -d '{"username":"csy2","password":"123","email":"csy2@163.com"}' http://localhost:5000/api/users -u admin:default
+
+
+# add POST
+curl -i -H "Content-Type: application/json" -X POST -d '{"title":"python is short","body":"simple is good"}' http://localhost:5000/api/postlist -u csy:123
+curl -i -H "Content-Type: application/json" -X POST -d '{"title":"life is short","body":"i use python"}' http://localhost:5000/api/postlist -u csy:123
+curl -i -H "Content-Type: application/json" -X POST -d '{"title":"python zen","body":"Simple is better than complex"}' http://localhost:5000/api/postlist -u csy2:123
+curl -i -H "Content-Type: application/json" -X POST -d '{"title":"python zen2","body":"Beautiful is better than ugly."}' http://localhost:5000/api/postlist -u csy2:123
+
+
